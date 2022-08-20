@@ -1,0 +1,41 @@
+{
+  "name": "daskeyboard-prs-job",
+  "version": "1.0.0",
+  "description": "a watcher to update daskeyboard keys when PR status changes",
+  "main": "dist/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swimmadude66/daskeyboard-cron-PR-status.git"
+  },
+  "keywords": [
+    "daskboard",
+    "q",
+    "github",
+    "pr",
+    "pull",
+    "status",
+    "cron"
+  ],
+  "author": "swimmadude66",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swimmadude66/daskeyboard-cron-PR-status/issues"
+  },
+  "homepage": "https://github.com/swimmadude66/daskeyboard-cron-PR-status#readme",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "dependencies": {
+    "axios": "0.27.2",
+    "dotenv": "16.0.1"
+  },
+  "devDependencies": {
+    "@types/axios": "0.14.0",
+    "@types/node": "18.7.8",
+    "typescript": "4.7.4",
+    "mocha": "10.0.0",
+    "ts-node": "10.9.1"
+  }
+}
